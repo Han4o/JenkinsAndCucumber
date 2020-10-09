@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="21.136">
-<testcase classname="Submit data to webdriver university using contact us form" name="Check Page Objects" time="11.238">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="30.632">
+<testcase classname="Submit data to webdriver university using contact us form" name="Check Page Objects" time="14.374">
 <system-out><![CDATA[Given I access Contact Form.................................................passed
 When I enter a valid First Name.............................................passed
 And I enter a valid Last Name...............................................passed
@@ -10,7 +10,7 @@ When I click on the submit button...........................................pass
 Then the information should successfully be submitted via the contact us form.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Products" name="Validate promo code alert is visible when clicking on the special offers link" time="9.587">
+<testcase classname="Products" name="Validate promo code alert is visible when clicking on the special offers link" time="15.879">
 <system-out><![CDATA[Given User navigates to "http://webdriveruniversity.com/Page-Object-Model/products.html" website.passed
 When User clicks on the "#container-special-offers".........................passed
 Then User should be presented with a promo alert............................passed

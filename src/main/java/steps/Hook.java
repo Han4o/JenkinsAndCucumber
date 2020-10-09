@@ -21,19 +21,12 @@ public class Hook extends DriverFactory {
     @After
     public void closeDriverAndScreenshotOnFailure(Scenario scenario) {
         try {
-            if (driver != null && scenario.isFailed()){
+            if (driver != null){
                 scenario.embed(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES), "image/png", "Screenshot" );
                 driver.manage().deleteAllCookies();
                 driver.quit();
                 driver = null;
             }
-
-
-                if (driver != null) {
-                    driver.manage().deleteAllCookies();
-                    driver.quit();
-                    driver = null;
-                }
         } catch (Exception e) {
             System.out.println("Methods failed: tearDownAndScreenshotFailure, Exception: " + e.getMessage());
         }
