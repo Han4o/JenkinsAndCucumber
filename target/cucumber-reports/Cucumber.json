@@ -1,0 +1,239 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-09T08:32:17.334Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7449000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hook.runDriver()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Check Page Objects",
+        "description": "",
+        "id": "submit-data-to-webdriver-university-using-contact-us-form;check-page-objects",
+        "after": [
+          {
+            "result": {
+              "duration": 839000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hook.closeDriverAndScreenshotOnFailure(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 909000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I access Contact Form",
+            "match": {
+              "location": "steps.ContactUsSteps.iAccessContactForm()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 289000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter a valid First Name",
+            "match": {
+              "location": "steps.ContactUsSteps.iEnterAValidFirstName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 201000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter a valid Last Name",
+            "match": {
+              "location": "steps.ContactUsSteps.iEnterAValidLastName(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "woods",
+                  "jackson",
+                  "jones"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I enter a valid email address",
+            "match": {
+              "location": "steps.ContactUsSteps.iEnterAValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I enter comments",
+            "match": {
+              "location": "steps.ContactUsSteps.iEnterComments(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "example comment one",
+                  "example comment two"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 975000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on the submit button",
+            "match": {
+              "location": "steps.ContactUsSteps.iClickOnTheSubmitButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the information should successfully be submitted via the contact us form",
+            "match": {
+              "location": "steps.ContactUsSteps.theInformationShouldSuccessfullyBeSubmittedViaTheContactUsForm()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Submit data to webdriver university using contact us form",
+    "description": "  A user should be able to submit information via the contact us form\n  If a user clicks on the reset button, then all information should be removed from the contact us form",
+    "id": "submit-data-to-webdriver-university-using-contact-us-form",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/ContactUs.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-09T08:32:28.580Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4803000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hook.runDriver()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Validate promo code alert is visible when clicking on the special offers link",
+        "description": "",
+        "id": "products;validate-promo-code-alert-is-visible-when-clicking-on-the-special-offers-link;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 701000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hook.closeDriverAndScreenshotOnFailure(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 892000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to \"http://webdriveruniversity.com/Page-Object-Model/products.html\" website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://webdriveruniversity.com/Page-Object-Model/products.html\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.ProductSteps.userNavigatesToWebsite(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 224000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks on the \"#container-special-offers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"#container-special-offers\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.ProductSteps.userClicksOnThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2960000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should be presented with a promo alert",
+            "match": {
+              "location": "steps.ProductSteps.userShouldBePresentedWithAPromoAlert()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Products",
+    "description": "",
+    "id": "products",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/products.feature",
+    "tags": []
+  }
+]
